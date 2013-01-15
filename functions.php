@@ -669,7 +669,7 @@ function get_piratenkleider_custom_excerpt( ){
   }
   
   $excerpt = strip_shortcodes($excerpt);
-  $excerpt = strip_tags($excerpt); 
+  $excerpt = strip_tags($excerpt,'<a>'); 
   if (mb_strlen($excerpt)<5) {
       $excerpt = 'Kein Inhalt';
   }
